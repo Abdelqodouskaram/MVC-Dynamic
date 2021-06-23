@@ -9,10 +9,15 @@ class UserController{
     public function index()
     {
         $User = new UserModel();
+
         $User->name = "AbdElQodous";
+
         $User->age = 24;
+        
         $User->id = 1;
+
         require_once __DIR__."/../Views/User/index.php";
+        
         return $User;
     }
 
@@ -24,7 +29,6 @@ class UserController{
     public function edit()
     {
         require_once __DIR__ . "/../Views/User/edit.php";
-        
     }
 
     public function show()

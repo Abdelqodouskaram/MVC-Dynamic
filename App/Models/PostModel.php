@@ -30,6 +30,7 @@ class PostModel{
         return $data;
 
     }
+    
     public function deletePost($id)
     {
 
